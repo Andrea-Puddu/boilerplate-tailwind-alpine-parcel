@@ -1,0 +1,22 @@
+{
+  "name": "boilerplate-alpine-tailwind-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel --no-source-maps",
+    "build": "rm -rf dist && parcel build --no-source-maps",
+    "update": "ncu --upgrade"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "alpinejs": "^3.13.8"
+  }
+}
