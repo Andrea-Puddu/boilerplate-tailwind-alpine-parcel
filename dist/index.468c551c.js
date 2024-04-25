@@ -589,6 +589,21 @@ var _alpinejs = require("alpinejs");
 var _alpinejsDefault = parcelHelpers.interopDefault(_alpinejs);
 window.Alpine = (0, _alpinejsDefault.default);
 (0, _alpinejsDefault.default).start();
+function updateViewportSize() {
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    const viewportSize = document.getElementById("viewportSize");
+    if (viewportWidth < 300 || viewportHeight < 300) viewportSize.innerHTML = `
+      <h2 class="text-xl uppercase font-bold tracking-wide mb-2 text-red-700">Display too small</h2>
+      <p class="text-sm font-bold">Please enlarge your browser window to continue</p>
+    `;
+    else viewportSize.innerHTML = `
+      <h2 class="text-2xl uppercase font-bold tracking-wide mb-2">Viewport</h2>
+      <p class="text-4xl">${viewportWidth} - ${viewportHeight}</p>
+    `;
+}
+updateViewportSize();
+window.addEventListener("resize", updateViewportSize);
 
 },{"alpinejs":"a9G2U","@parcel/transformer-js/src/esmodule-helpers.js":"j7FRh"}],"a9G2U":[function(require,module,exports) {
 // packages/alpinejs/src/scheduler.js

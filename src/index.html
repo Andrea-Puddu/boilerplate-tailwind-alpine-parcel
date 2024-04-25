@@ -6,10 +6,33 @@
     <link href="./index.css" type="text/css" rel="stylesheet" />
     <script type="module" src="index.js"></script>
   </head>
-  <body>
+  <body
+    class="relative bg-gray-100 text-gray-800 h-screen p-4 flex flex-col justify-center items-center gap-8"
+  >
+    <!-- Viewport size indicator -->
+    <div class="text-center" id="viewportSize">
+      <!-- Viewport size will be added dinamically via JavaScript -->
+    </div>
+
+    <!-- Responsive Container -->
+    <div class="relative w-2/4 h-2/4 overflow-hidden bg-red-500 rounded-lg shadow-lg">
+      <img
+        src="https://images.unsplash.com/photo-1713815540987-0324b70c33cc?q=80&w=2678&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+        class="w-full h-full object-fill"
+      />
+    </div>
+
+    <!-- Resize indicator -->
+    <div
+      class="w-56 bg-red-600 text-gray-50 p-2 sm:p-4 fixed bottom-0 -right-[112px] -rotate-45 origin-bottom z-10 flex flex-col justify-center items-center"
+    >
+      <p class="text-sm font-semibold">Resize</p>
+      <span class="font-bold">&darr;</span>
+    </div>
+
     <!-- Responsive Layout with 3 squared images -->
-    <section class="wrapper layout">
-      <!-- First article/image -->
+    <!-- <section class="wrapper layout">
       <article class="relative group sm:col-span-2 sm:row-span-full overflow-hidden">
         <a href="#">
           <figure class="w-full h-full">
@@ -35,7 +58,6 @@
         </a>
       </article>
 
-      <!-- Second article/image -->
       <article class="relative group overflow-hidden">
         <a href="#">
           <figure class="w-full h-[53vw] sm:h-full">
@@ -54,7 +76,6 @@
         </a>
       </article>
 
-      <!-- Third article/image -->
       <article class="relative group overflow-hidden">
         <a href="#">
           <figure class="w-full h-[53vw] sm:h-full">
@@ -72,6 +93,6 @@
           </div>
         </a>
       </article>
-    </section>
+    </section> -->
   </body>
 </html>

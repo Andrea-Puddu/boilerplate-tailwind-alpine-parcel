@@ -6,14 +6,40 @@
     <link href="/index.a4412c37.css" type="text/css" rel="stylesheet">
     <script src="/index.468c551c.js" defer=""></script>
   </head>
-  <body>
+  <body class="relative bg-gray-100 text-gray-800 h-screen p-4 flex flex-col justify-center items-center gap-8">
+    <!-- Viewport size indicator -->
+    <div class="text-center" id="viewportSize">
+      <!-- Viewport size will be added dinamically via JavaScript -->
+    </div>
+
+    <!-- Responsive Container -->
+    <div class="relative w-2/4 h-2/4 overflow-hidden bg-red-500 rounded-lg shadow-lg">
+      <img src="https://images.unsplash.com/photo-1713815540987-0324b70c33cc?q=80&w=2678&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-full h-full object-fill">
+    </div>
+
+    <!-- Resize indicator -->
+    <div class="w-56 bg-red-600 text-gray-50 p-2 sm:p-4 fixed bottom-0 -right-[112px] -rotate-45 origin-bottom z-10 flex flex-col justify-center items-center">
+      <p class="text-sm font-semibold">Resize</p>
+      <span class="font-bold">&darr;</span>
+    </div>
+
     <!-- Responsive Layout with 3 squared images -->
-    <section class="wrapper layout">
-      <!-- First article/image -->
+    <!-- <section class="wrapper layout">
       <article class="relative group sm:col-span-2 sm:row-span-full overflow-hidden">
         <a href="#">
           <figure class="w-full h-full">
-            <img height="1400" width="1400" srcset="https://images.pexels.com/photos/12416030/pexels-photo-12416030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 1400w" sizes="( max-width: 40em ) 62vw, 656px" loading="lazy" src="https://images.pexels.com/photos/12416030/pexels-photo-12416030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Photo description 1" class="w-full h-full object-fill brightness-75 group-hover:brightness-100 duration-300">
+            <img
+              height="1400"
+              width="1400"
+              srcset="
+                https://images.pexels.com/photos/12416030/pexels-photo-12416030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 1400w
+              "
+              sizes="( max-width: 40em ) 62vw, 656px"
+              loading="lazy"
+              src="https://images.pexels.com/photos/12416030/pexels-photo-12416030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Photo description 1"
+              class="w-full h-full object-fill brightness-75 group-hover:brightness-100 duration-300"
+            />
           </figure>
           <div class="absolute bottom-0 left-0 w-full p-7 text-white text-center z-10">
             <p class="bg-red-700 inline-block text-base font-bold px-2 mb-2 shadow-lg">
@@ -24,11 +50,14 @@
         </a>
       </article>
 
-      <!-- Second article/image -->
       <article class="relative group overflow-hidden">
         <a href="#">
           <figure class="w-full h-[53vw] sm:h-full">
-            <img src="https://images.unsplash.com/photo-1504600770771-fb03a6961d33?q=80&w=2682&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo description 2" class="w-full h-full object-fill brightness-75 group-hover:brightness-100 duration-300">
+            <img
+              src="https://images.unsplash.com/photo-1504600770771-fb03a6961d33?q=80&w=2682&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Photo description 2"
+              class="w-full h-full object-fill brightness-75 group-hover:brightness-100 duration-300"
+            />
           </figure>
           <div class="absolute bottom-0 left-0 w-full p-5 text-white text-center z-10">
             <p class="bg-red-700 inline-block text-base font-bold px-2 mb-2 shadow-lg">
@@ -39,11 +68,14 @@
         </a>
       </article>
 
-      <!-- Third article/image -->
       <article class="relative group overflow-hidden">
         <a href="#">
           <figure class="w-full h-[53vw] sm:h-full">
-            <img src="https://images.unsplash.com/photo-1488654715439-fbf461f0eb8d?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo description 3" class="w-full h-full object-fill brightness-75 group-hover:brightness-100 duration-300">
+            <img
+              src="https://images.unsplash.com/photo-1488654715439-fbf461f0eb8d?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Photo description 3"
+              class="w-full h-full object-fill brightness-75 group-hover:brightness-100 duration-300"
+            />
           </figure>
           <div class="absolute bottom-0 left-0 w-full p-5 text-white text-center z-10">
             <p class="bg-red-700 inline-block text-base font-bold px-2 mb-2 shadow-lg">
@@ -53,6 +85,6 @@
           </div>
         </a>
       </article>
-    </section>
+    </section> -->
   </body>
 </html>
