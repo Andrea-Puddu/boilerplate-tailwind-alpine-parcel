@@ -1,13 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* @layer utilities {
-  .wrapper {
-    @apply max-w-5xl mx-auto px-2 sm:px-4 mt-2 sm:mt-4;
-  }
-
-  .layout {
-    @apply grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-2 gap-2 sm:gap-4;
-  }
-} */
